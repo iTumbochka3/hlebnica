@@ -1,6 +1,4 @@
 .App {
-    display: flex;
-    flex-direction: column;
     @media (min-width:20em) {
         /* smartphones, iPhone, portrait 480x320 phones */
     }
@@ -24,4 +22,8 @@
     @media (min-width:80em) {
         /* hi-res laptops and desktops */
     }
+}
+
+.header {
+    background: #F3BF42;
 }
