@@ -10,19 +10,20 @@ const WelcomePage: React.FC = () => {
       <h3>Вся продукция</h3>
       <List
         grid={{
-          gutter: 16,
+          gutter: 8,
           xs: 1,
           sm: 2,
           md: 4,
           lg: 4,
-          xl: 6,
-          xxl: 3,
+          xl: 4,
+          xxl: 4,
         }}
         dataSource={productStore.products}
         renderItem={item => (
           <List.Item>
             <Card title={item.name}>
               <Image
+                className='product-image'
                 width={100}
                 src={bulochka}
               />
