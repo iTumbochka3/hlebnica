@@ -1,11 +1,4 @@
-$main-color: #F3BF42;
-
-//theme
-$color-1: #E1B168;
-$color-2: #292E36;
-
-$font-color-1: #555555;
-$font-color-2: #FFFFFF;
+@import './assets/variables.scss';
 
 .App {
     min-height: 100vh;

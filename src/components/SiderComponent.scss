@@ -1,0 +1,16 @@
+@import '../assets/variables.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &__link {
+        margin: 1em;
+        color: $font-color-2;
+        
+        &_active {
+            color: $color-1;
+        }
+    }
+}

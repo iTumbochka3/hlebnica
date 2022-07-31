@@ -1,34 +1,17 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import './SiderComponent.scss';
 
 const SiderComponent: React.FC = () => {
   return (
-    <nav
-      style={{
-        padding: "1rem",
-      }}
-    >
-      <NavLink
-        style={({ isActive }) => {
-          return {
-            display: "block",
-            margin: "1rem 0",
-            color: isActive ? "#E1B168" : "#FFFFFF",
-          };
-        }}
-        to={`/`}
+    <nav className='navbar'>
+      <NavLink to={`/`}
+        className={({ isActive }) => isActive ? "navbar__link navbar__link_active" : "navbar__link"}
       >
         Основная
       </NavLink>
-      <NavLink
-        style={({ isActive }) => {
-          return {
-            display: "block",
-            margin: "1rem 0",
-            color: isActive ? "#E1B168" : "#FFFFFF",
-          };
-        }}
-        to={`/orders`}
+      <NavLink to={`/orders`}
+        className={({ isActive }) => isActive ? "navbar__link navbar__link_active" : "navbar__link"}
       >
         Заказы
       </NavLink>
