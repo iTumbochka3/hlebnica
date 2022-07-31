@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, List, Image } from 'antd';
 import { useStores } from '../use/use-stores';
 import bulochka from '../assets/products/bulochkassaharom.jpg';
+import '../assets/product-card.scss';
 
 const WelcomePage: React.FC = () => {
   const { productStore } = useStores();
@@ -21,10 +22,9 @@ const WelcomePage: React.FC = () => {
         dataSource={productStore.products}
         renderItem={item => (
           <List.Item>
-            <Card title={item.name}>
+            <Card title={item.name} className='product-card'>
               <Image
-                className='product-image'
-                width={100}
+                className='product-card__image'
                 src={bulochka}
               />
             </Card>

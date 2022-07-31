@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.product-card {
+    border-radius: 4px;
+    &__image {
+        border-radius: 4px;
+    }
+}
