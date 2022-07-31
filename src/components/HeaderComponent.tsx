@@ -2,9 +2,7 @@ import React from 'react';
 
 const HeaderComponent: React.FC = () => {
     return (
-        <div>
-            HeaderComponent
-        </div>
+        <h3>Пекарня «Хлебница» | Улан-Удэ</h3>
     );
 }
 

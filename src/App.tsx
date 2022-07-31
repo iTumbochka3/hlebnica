@@ -4,8 +4,9 @@ import { Layout } from 'antd';
 import './App.scss';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
+import SiderComponent from './components/SiderComponent';
 
-const { Header, Footer, Content } = Layout;
+const { Header, Footer, Content, Sider } = Layout;
 
 const App: React.FC = () => {
   return (
@@ -13,9 +14,14 @@ const App: React.FC = () => {
       <Header className='header'>
         <HeaderComponent />
       </Header>
-      <Content>
-        <Outlet />
-      </Content>
+      <Layout>
+        <Sider className='sider'>
+          <SiderComponent />
+        </Sider>
+        <Content className='content'>
+          <Outlet />
+        </Content>
+      </Layout>
       <Footer className='footer'>
         <FooterComponent />
       </Footer>

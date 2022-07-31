@@ -1,4 +1,15 @@
+$main-color: #F3BF42;
+
+//theme
+$color-1: #E1B168;
+$color-2: #292E36;
+
+$font-color-1: #555555;
+$font-color-2: #FFFFFF;
+
 .App {
+    min-height: 100vh;
+
     @media (min-width:20em) {
         /* smartphones, iPhone, portrait 480x320 phones */
     }
@@ -25,5 +36,23 @@
 }
 
 .header {
-    background: #F3BF42;
+    background: $main-color;
+    color: $font-color-1;
+}
+
+.sider {
+    background: $color-2;
+    color: $font-color-2;
+    border-right: 1px solid $color-1;
+}
+
+.content {
+    color: $font-color-1;
+    margin: 1em;
+}
+
+.footer {
+    background: $color-2;
+    color: $font-color-2;
+    border-top: 1px solid $color-1;
 }

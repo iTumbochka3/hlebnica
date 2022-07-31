@@ -3,7 +3,7 @@ import React from 'react';
 const FooterComponent: React.FC = () => {
     return (
         <div>
-            FooterComponent
+            О нас: 
         </div>
     );
 }
