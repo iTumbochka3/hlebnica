@@ -8,4 +8,5 @@ export interface IOrder {
     user_id: string,
     company_id: string,
     items: IProduct[],
+    status: string,
 }
